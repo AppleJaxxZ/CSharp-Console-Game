@@ -1,0 +1,13 @@
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.csproj.AssemblyReference.cache
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.AssemblyInfoInputs.cache
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.AssemblyInfo.cs
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.exe
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.deps.json
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.runtimeconfig.json
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.runtimeconfig.dev.json
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.dll
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\bin\Debug\netcoreapp3.1\Attack Console Game.pdb
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.dll
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.pdb
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game\obj\Debug\netcoreapp3.1\Attack Console Game.genruntimeconfig.cache
