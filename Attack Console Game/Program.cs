@@ -25,7 +25,7 @@ namespace Attack_Console_Game
 
 
             //Create a variable to track the first enemy.
-            var firstEnemy = new Enemy("Undead Lich");
+            Enemy firstEnemy = new Enemy("Undead Lich");
 
             //WriteOut to the console that an enemy is attacking.
             Console.WriteLine(player.Name + " ..you have encountered a " + firstEnemy.Name + "!");
@@ -38,7 +38,7 @@ namespace Attack_Console_Game
             {
 
                 //Write out to screen your options..
-                Console.WriteLine("\n\nWhat would you like to do?\n\n 1.) Sword Swipe \n 2.) Sword Lunge Attack\n 3.) Defend With Sheild\n 4.) Try to Retreat!");
+                Console.WriteLine("\n\nWhat would you like to do?\n\n 1.) Sword Swipe \n 2.) Sword Three Strike Attack\n 3.) Defend With Sheild\n 4.) Try to Retreat!");
 
                 //Store what action the player Chooses.  
                 String playersAction = Console.ReadLine();
@@ -48,31 +48,43 @@ namespace Attack_Console_Game
                 if (playersAction == "1")
                 {
                     //write out user chose "1".
-                    Console.WriteLine("You choose a sword swipe attack!");
+                    Console.WriteLine("You choose a sword swipe attack" +firstEnemy.Name +"!");
 
                     //Apply the attack damage to the enemy  random is a c#, .net class that is pre-made.  using Next will return a value withing a specified range.
                     firstEnemy.GetsHit(random.Next(1, 15));
+
+                    //
                 }
                 else if (playersAction == "2")
                 {
                     //write out user chose "1".
-                    Console.WriteLine("You choose sword lunge attack!");
+                    Console.WriteLine("You choose sword three strike attack" + firstEnemy.Name +"!");
+
+                    for (int i = 0; i < 3; i++)     
+                    {
+                        //Apply the attack damage to the enemy
+                        firstEnemy.GetsHit(random.Next(1, 15));
+                    }
 
                 }
                 else if (playersAction == "3")
                 {
-                    Console.WriteLine("You choose to defend with your sheild!");
+                    Console.WriteLine("You choose to defend with your sheild from " + firstEnemy.Name +"'s attack!");
 
                 }
                 else if (playersAction == "4")
                 {
-                    Console.WriteLine("You choose to try and retreat!");
+                    Console.WriteLine("You choose to try and retreat from the " + firstEnemy.Name +"!");
 
                 }
                 else
                 {
                     Console.WriteLine("You chose to do something else.");
                 }
+
+
+                //Have the enemey attack the player
+                player.GetsHit(random.Next(1, 5));
             }
 
 

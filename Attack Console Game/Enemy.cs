@@ -54,7 +54,8 @@ namespace Attack_Console_Game
             Health = Health - hit_value;
 
             //Write out that the enemy got hit.
-            Console.WriteLine(Name + " was hit for " + hit_value + " damage!");
+            Console.WriteLine(Name + " was hit for " + hit_value + " damage! He now has " + Health + " " +
+                "left!");
 
             //check if the enemy is dead.
             if (Health <= 0)
