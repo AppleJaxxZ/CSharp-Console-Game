@@ -33,58 +33,61 @@ namespace Attack_Console_Game
 
        
 
-            //While the first enemy is NOT dead, repeat the while loop playable cycle.
-            while (!firstEnemy.IsDead)
+            //While the first enemyand the player are not dead, repeat the while loop playable cycle.
+            while (!firstEnemy.IsDead && !player.IsDead)
             {
 
                 //Write out to screen your options..
-                Console.WriteLine("\n\nWhat would you like to do?\n\n 1.) Sword Swipe \n 2.) Sword Three Strike Attack\n 3.) Defend With Sheild\n 4.) Try to Retreat!");
-
+                Console.WriteLine("\n\nWhat would you like to do?\n\n 1.) Sword Swipe \n 2.) Sword Three Strike Attack\n 3.) Defend With Sheild\n 4.) Cast a healing spell!");
+                
                 //Store what action the player Chooses.  
                 String playersAction = Console.ReadLine();
 
 
-                //Check what action the player chose.
-                if (playersAction == "1")
+
+                switch(playersAction)
                 {
-                    //write out user chose "1".
-                    Console.WriteLine("You choose a sword swipe attack" +firstEnemy.Name +"!");
+                    case "1":
+                        //write out user chose "1".
+                        Console.WriteLine("You choose a sword swipe attack" + firstEnemy.Name + "!");
 
-                    //Apply the attack damage to the enemy  random is a c#, .net class that is pre-made.  using Next will return a value withing a specified range.
-                    firstEnemy.GetsHit(random.Next(1, 15));
-
-                    //
-                }
-                else if (playersAction == "2")
-                {
-                    //write out user chose "1".
-                    Console.WriteLine("You choose sword three strike attack" + firstEnemy.Name +"!");
-
-                    for (int i = 0; i < 3; i++)     
-                    {
-                        //Apply the attack damage to the enemy
+                        //Apply the attack damage to the enemy  random is a c#, .net class that is pre-made.  using Next will return a value withing a specified range.
                         firstEnemy.GetsHit(random.Next(1, 15));
-                    }
+                        break;
+
+                    case "2":
+                        //write out user chose "1".
+                        Console.WriteLine("You choose sword three strike attack" + firstEnemy.Name + "!");
+
+                        for (int i = 0; i < 3; i++)
+                        {
+                            //Apply the attack damage to the enemy
+                            firstEnemy.GetsHit(random.Next(1, 15));
+                        }
+                        break;
+
+                    case "3":
+                        Console.WriteLine("You choose to defend with your sheild from " + firstEnemy.Name + "'s attack!");
+                        //set that the player is guarding.
+                        player.IsGuarding = true;
+                        break;
+
+                    case "4":
+                        //write out you chose chose number 4.
+                        Console.WriteLine("You choose to heal yourself!");
+                        //Heal the player a random amount
+                        player.Heal(random.Next(1, 15));
+                        break;
+
+                    default:
+                        Console.WriteLine("You chose to do something else.");
+                        break;
+
 
                 }
-                else if (playersAction == "3")
-                {
-                    Console.WriteLine("You choose to defend with your sheild from " + firstEnemy.Name +"'s attack!");
-
-                }
-                else if (playersAction == "4")
-                {
-                    Console.WriteLine("You choose to try and retreat from the " + firstEnemy.Name +"!");
-
-                }
-                else
-                {
-                    Console.WriteLine("You chose to do something else.");
-                }
-
 
                 //Have the enemey attack the player
-                player.GetsHit(random.Next(1, 5));
+                player.GetsHit(random.Next(5, 8));
             }
 
 
