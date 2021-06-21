@@ -1,0 +1,5 @@
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.exe
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.dll
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.deps.json
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.runtimeconfig.json
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.pdb

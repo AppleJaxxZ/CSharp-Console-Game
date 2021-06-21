@@ -38,7 +38,9 @@ namespace Attack_Console_Game
             //Set the enemies health.
             Health = 100;
 
-            //Set the enemy name;
+            //Set the enemy name
+            Name = name;
+
 
 
 

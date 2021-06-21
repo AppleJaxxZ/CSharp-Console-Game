@@ -1,0 +1,2 @@
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.pdb
+C:\Users\user\Documents\cSharpProjects\Attack Console Game\Attack Console Game.exe

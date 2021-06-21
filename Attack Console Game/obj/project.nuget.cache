@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GaF/0bDGWATBgFUMPuwI9O7vGNEU00YT+9gpIEbDi+BLnUzHuZ8KrtWmtZsnJ8cJvl4TVNWEduh7DIerhFyz4Q==",
+  "dgSpecHash": "HtvTMvpfhxMNF5jEGyi1JaCLqttw2Zr07xLlJ2hNBGrQZvfKNfVRxY/BrdI0YgqGPM53vcO8g70UkmPo94HUGg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Documents\\cSharpProjects\\Attack Console Game\\Attack Console Game\\Attack Console Game.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+  ],
   "logs": []
 }
